@@ -1,0 +1,499 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #e6e3e3 0%,
+    #e6e3e3 50%,
+    #272626 50%,
+    #272626 100%
+  );
+  margin: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: 95vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #505050;
+  font-size: 0.9375em;
+  font-weight: 700;
+}
+
+.navbar {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 1.25em;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2d2a;
+}
+
+.text-container p:nth-child(1) {
+  font-family: calibri;
+  font-weight: bold;
+  color: #6d6d6d;
+  font-size: 1.375em;
+}
+
+.text-container p:nth-child(2) {
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 0.063em;
+  color: #1a1a1a;
+  font-size: 4.0625em;
+  width: 100%;
+}
+
+.text-container p:nth-child(3) {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #403e4e;
+  font-size: 1.875em;
+  line-height: 1.875em;
+}
+
+@media screen and (max-width: 320px) {
+  /* for screen size less or equal to 320px*/
+  .text-container p,
+  .text-container p:nth-child(1),
+  .text-container p:nth-child(2),
+  .text-container p:nth-child(3) {
+    font-size: 90%; /*Changes as per your requirement*/
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* for screen size less or equal to 700px*/
+  .text-container p,
+  .text-container p:nth-child(1),
+  .text-container p:nth-child(2),
+  .text-container p:nth-child(3) {
+    font-size: 150%; /*Changes as per your requirement*/
+  }
+}
+
+.text-container p {
+  line-height: 0vh;
+  margin: 45px 0px 25px auto;
+  position: relative;
+  max-width: 100%;
+}
+
+.text-container {
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%, -42%);
+  display: inline-block;
+}
+
+.text-container button {
+  width: 120px;
+  height: 40px;
+  border-radius: 100px;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 0.875em;
+  outline: none;
+  margin: 0px 10px;
+}
+
+.hire-btn {
+  border: 2px solid #373636;
+  color: #373636;
+}
+
+.download-resume {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none;
+}
+
+button:active {
+  transform: scale(1.01);
+}
+
+.about-container {
+  width: 75%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  margin: 1% auto 25px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-text {
+  width: 66.52vw;
+  text-align: center;
+  padding: 10px;
+  line-height: 2;
+  font-family: Calibri;
+  font-size: 1.3em;
+}
+
+.about-text p:nth-child(1) {
+  color: #403e3e;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 1.8125em;
+  line-height: 0px;
+  text-align: center;
+}
+
+.about-text p:nth-child(2) {
+  color: #3e3d3d;
+  font-size: 1.25em;
+  font-family: calibri;
+  font-weight: bold;
+  line-height: 5px;
+  text-align: center;
+}
+
+.about-text p:nth-child(3),
+.about-text p:nth-child(4) {
+  color: #7e7d7d;
+  font-family: Calibri;
+  font-size: 1.125em;
+}
+
+/*start of the portfolio project section*/
+.row {
+  margin: 600px auto -16px auto;
+  width: 90%;
+  z-index: 1;
+  border: 2px;
+  border-radius: 10px;
+  align-items: flex-end;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  align-items: center;
+  align-content: center;
+  border: 1px;
+  padding: 22px;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  align-items: center;
+  border: 2px;
+  border-color: #373636;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  font-family: calibri;
+  font-size: 1em;
+}
+
+.column-child {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.column:hover .column-child,
+.column:focus .column-child {
+  transform: scale(1.05);
+}
+img {
+  float: left;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.contact-me {
+  margin: 600px auto 0px auto;
+  width: 100%;
+  height: 300px;
+  background-color: #1a1a1a;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me p {
+  color: #505050;
+  font-size: 1.875em;
+  font-family: calibri;
+  font-weight: bold;
+  border-bottom: 2px solid #e6e3e3;
+}
+
+.contact-me button {
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  outline: none;
+  border: none;
+  font-size: 0.875em;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+input {
+  border: 0;
+  margin: 1em 40px;
+  width: 300px;
+  padding: 10px;
+  border-bottom: 2px solid #141414;
+  background: none;
+  font-family: calibri;
+  display: block;
+  color: #272727;
+}
+
+ul.ul {
+  display: inline-block;
+}
+
+#contact {
+  background: rgb(200, 200, 200);
+  position: relative;
+  height: 1000px;
+  width: 750px;
+  box-shadow: 0 10px 20px rgba(17, 17, 17, 0.1);
+  z-index: 10;
+}
+
+.form-popup {
+  height: 250px;
+  width: 60px;
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.contact-form-text {
+  border: 0;
+  width: 300px;
+  height: 100px;
+  display: block;
+  margin-left: 40px;
+  background: none;
+  padding: 10px auto;
+  font-family: calibri;
+  border-bottom: 2px solid #141414;
+  color: #141414;
+  z-index: 10;
+}
+
+.submit {
+  border: 2px solid #181818;
+  color: #141414;
+  z-index: 10;
+  padding: 40px auto;
+  margin: 30px;
+}
+
+.submit:hover {
+  color: rgb(70, 69, 69);
+  z-index: 10;
+}
+
+.btn {
+  background: none;
+  border: 2px solid #252525;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 5em auto;
+  padding: 1em 1em;
+  color: #212121;
+  font-family: calibri;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease all 0.3s;
+  display: block;
+  border-radius: 100px;
+  z-index: 10;
+}
+
+.btn:hover {
+  background: #141414;
+  color: #fff;
+  border: #000000 solid 2px;
+  z-index: 10;
+}
+.btn:active {
+  background: #272727;
+  color: #fff;
+  border: #202020 solid 2px;
+  z-index: 10;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: -10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 3em;
+  color: #414040;
+  z-index: 10;
+}
+@media (max-width: 765px) {
+  textarea {
+    width: 250px;
+  }
+  input {
+    width: 250px;
+  }
+}
+
+footer {
+  background-color: rgb(56, 55, 55);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 0px auto;
+  position: relative;
+}
+
+footer p {
+  font-family: calibri;
+}
+
+footer p:nth-child(1) {
+  font-size: 1.875em;
+  font-weight: bold;
+  color: #141414;
+  line-height: 10px;
+}
+
+footer p:nth-child(2) {
+  font-size: 1em;
+  font-weight: bold;
+  color: #5d5b5b;
+  width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4e4d4d;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons i {
+  color: #ffffff;
+}
+
+.social a:hover,
+.social a:focus {
+  background-color: #141414;
+  transform: scale(1.3);
+}
+.social-icons a:hover i,
+.social a:hover i,
+.social-icons a:focus i,
+.social a:focus i {
+  color: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.3);
+  transition: all 0.25s;
+}
+
+.social i {
+  font-size: 1.25em;
+}
+
+.copyright {
+  color: #000000;
+  font-size: 0.938em;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
